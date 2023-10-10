@@ -1,0 +1,15 @@
+ 1210  ls
+ 1211  curl https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv -o wilders.csv
+ 1212  ls
+ 1213  grep "PHP" < wilders.csv > php_france_2019.csv
+ 1214  ls
+ 1215  grep -E "JavaScript|Toulouse|Biarritz" fichier_source.csv > javascript_biarritz_toulouse.csv\n
+ 1216  grep -E "JavaScript|Toulouse|Biarritz" wilders.csv > javascript_biarritz_toulouse.csv\n
+ 1217  rm -r javascript_biarritz_toulouse.csv
+ 1218  grep -E "JavaScript.*((Toulouse)|(Biarritz))" wilders.csv > javascript_biarritz_toulouse.csv\n
+ 1219  rm -r javascript_biarritz_toulouse.csv
+ 1220  grep -E ".*JavaScript.*Toulouse|.*JavaScript.*Biarritz" wilders.csv > javascript_biarritz_toulouse.csv\n
+ 1221  rm -r javascript_biarritz_toulouse.csv
+ 1222  grep "JavaScript" wilders.csv | grep -E "Toulouse|Biarritz" > javascript_biarritz_toulouse.csv\n
+ 1223  history | tail -n 10 > history.txt\n
+ 1224  ls
